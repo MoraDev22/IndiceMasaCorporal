@@ -1,0 +1,1 @@
+El proposito de este proyecto es calcular el IMC de un usuario en base a sus datos proporcionados
