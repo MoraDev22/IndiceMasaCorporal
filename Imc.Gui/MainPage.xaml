@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage   xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               x:Class="Imc.Gui.MainPage"
+               Title="Índice Masa Corporal"
+               Shell.BackgroundColor="#512BD4"
+               Shell.TitleColor="White">
+    <ScrollView>
+        <VerticalStackLayout
+            Margin="24"
+            Spacing="24">
+
+            <Border
+                Stroke="Aqua"
+                Padding="16">
+
+                <VerticalStackLayout
+                    Spacing="20">
+
+                    <Label
+                        Text="Ingrese su peso (Kg):"
+                        FontSize="Small"/>
+                    <Entry
+                        FontSize="Small"/>
+
+                    <Label
+                        Text="Ingrese su estatura (Mts):"
+                        FontSize="Small"/>
+                    <Entry
+                        FontSize="Small"/>
+
+
+                </VerticalStackLayout>
+
+            </Border>
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                Spacing="30">
+
+                <Button Text="Calcular"/>
+                <Button Text="Limpiar"/>
+
+            </HorizontalStackLayout>
+
+            <Border
+                Padding="16"
+                Stroke="Aqua">
+
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10"/>
+                </Border.StrokeShape>
+
+                <VerticalStackLayout
+                    Spacing="4">
+
+                    <Label
+                        Text="EL índice de masa corporal de la persona es: "
+                        FontSize="Small"/>
+                    <Label
+                        Text="24.1234"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"/>
+                    <Label
+                        Text="La situación nutricional de la persona es: "
+                        FontSize="Small"/>
+                    <Label
+                        Text="Peso normal"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"/>
+
+                </VerticalStackLayout>
+
+            </Border>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+    
+</ContentPage>
