@@ -21,13 +21,15 @@
                         Text="Ingrese su peso (Kg):"
                         FontSize="Small"/>
                     <Entry
-                        FontSize="Small"/>
+                        FontSize="Small"
+                        x:Name="PesoEntry"/>
 
                     <Label
                         Text="Ingrese su estatura (Mts):"
                         FontSize="Small"/>
                     <Entry
-                        FontSize="Small"/>
+                        FontSize="Small"
+                        x:Name="EstaturaEntry"/>
 
 
                 </VerticalStackLayout>
@@ -38,8 +40,10 @@
                 HorizontalOptions="Center"
                 Spacing="30">
 
-                <Button Text="Calcular"/>
-                <Button Text="Limpiar"/>
+                <Button Text="Calcular"
+                    Clicked="OnCalcularButtonClicked"/>
+                <Button Text="Limpiar"
+                    Clicked="OnLimpiarButtonClicked"/>
 
             </HorizontalStackLayout>
 
@@ -61,15 +65,18 @@
                         Text="24.1234"
                         FontSize="Medium"
                         FontAttributes="Bold"
-                        HorizontalOptions="Center"/>
+                        HorizontalOptions="Center"
+                        x:Name="ImcLabel"/>
                     <Label
                         Text="La situación nutricional de la persona es: "
-                        FontSize="Small"/>
+                        FontSize="Small"
+                        x:Name="SituacionNutricionalPeso"/>
                     <Label
                         Text="Peso normal"
                         FontSize="Medium"
                         FontAttributes="Bold"
-                        HorizontalOptions="Center"/>
+                        HorizontalOptions="Center"
+                        x:Name="SituacionNutricionalLabel"/>
 
                 </VerticalStackLayout>
 
