@@ -10,10 +10,7 @@ public partial class MainPage : ContentPage
 	{
 		Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 		InitializeComponent();
-		PesoEntry.Text = string.Empty;
-		EstaturaEntry.Text = string.Empty;
-		ImcLabel.Text = string.Empty;
-		SituacionNutricionalLabel.Text = string.Empty;
+		LimpiarInformacion();
 	}
 
 	private void OnCalcularButtonClicked(object sender, EventArgs e)
@@ -31,10 +28,7 @@ public partial class MainPage : ContentPage
 
 	private void OnLimpiarButtonClicked(object sender, EventArgs e)
 	{
-		PesoEntry.Text = string.Empty;
-		EstaturaEntry.Text = string.Empty;
-		ImcLabel.Text = string.Empty;
-		SituacionNutricionalLabel.Text = string.Empty;
+		LimpiarInformacion();
 	}
 
 	private decimal IndiceDeMasaCorporal(decimal peso, decimal estatura)
@@ -55,6 +49,14 @@ public partial class MainPage : ContentPage
 		};
 
 		return estadoNutricional;
+	}
+
+	private void LimpiarInformacion()
+	{
+		PesoEntry.Text = string.Empty;
+		EstaturaEntry.Text = string.Empty;
+		ImcLabel.Text = string.Empty;
+		SituacionNutricionalLabel.Text = string.Empty;
 	}
 
 }
