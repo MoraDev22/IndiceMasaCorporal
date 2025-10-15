@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using Imc.Model;
 
 namespace IndiceMasaCorporal
 {
@@ -81,6 +82,7 @@ namespace IndiceMasaCorporal
                 float peso = float.Parse(Console.ReadLine());
                 Console.Write("\nIntroduce tu estatura (mts): ");
                 float estatura = float.Parse(Console.ReadLine());
+
 
                 //Creamos una instancia de la clase IMC
                 IMC IMC = new IMC(peso, estatura);
